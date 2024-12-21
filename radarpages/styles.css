@@ -1,0 +1,516 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(223, 182, 253, 0.6); /* Ivy Swipe color */
+}
+
+/* Menu Section */
+.menu-section {
+    width: 100%;
+    max-width: 1200px;
+    height: 120px;
+    background-color: #4b00b2; /* Deep Purple */
+    margin: 0 auto;
+    padding: 20px 40px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-logo img {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 20px; /* Adjust placement */
+    left: 20px;
+    z-index: 10; /* Ensure it stays on top of the menu */
+}
+
+.menu-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; /* Add space between menu items */
+}
+
+.menu-nav li {
+    margin: 0;
+}
+
+.menu-nav a {
+    text-decoration: none;
+    color: #ffffff; /* White text */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.menu-nav a:hover {
+    color: #7df9ff; /* Electric Blue hover effect */
+}
+
+/* Generic Hero Section */
+.hero {
+    height: 400px; /* Adjust height as needed */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff; /* White text */
+}
+
+/* Hero Image for Forside Page */
+.forside-hero {
+    background: url("assets/heroforside.jpg") no-repeat center center/cover;
+}
+
+/* Hero Image for Fællesskab Page */
+.faellesskab-hero {
+    background: url("assets/Faellesskab-hero.png") no-repeat center center/cover;
+}
+
+/* Hero Image for Radar Effekt Page */
+.radar-effekt-hero {
+    background: url("assets/RadarEffektHero.png") no-repeat center center/cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff; /* White text */
+    padding: 20px;
+}
+
+.hero-overlay h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero-overlay p {
+    font-size: 1rem;
+    max-width: 700px;
+}
+
+/* Grouped Links Section */
+.links-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.link-item img {
+    width: 350px;
+    height: 361px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.link-item h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #4b00b2; /* Deep Purple */
+}
+
+/* Feature Section */
+.feature-section {
+    width: 100%;
+    position: relative;
+}
+
+.feature-background {
+    background: url("assets/gradient1-2.png") no-repeat center center/cover;
+    height: 600px; /* Adjust based on your design */
+    display: flex;
+    justify-content: center; /* Center the white block horizontally */
+    align-items: center; /* Center the white block vertically */
+}
+
+.feature-content {
+    background-color: #ffffff; /* White block */
+    border-radius: 15px; /* 10% corner radius */
+    padding: 30px; /* Spacing inside the block */
+    width: 80%; /* Adjust as needed for your design */
+    max-width: 1000px; /* Prevent the block from being too wide */
+    text-align: center; /* Center align all content */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+.centered-img {
+    width: 100px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space below the image */
+}
+
+.feature-content h3 {
+    font-size: 1rem; /* Smaller text */
+    margin-bottom: 15px; /* Space below the smaller text */
+    color: #4b00b2; /* Deep Purple */
+}
+
+.feature-content p {
+    font-size: 1rem; /* Longer text font size */
+    line-height: 1.6; /* Improves readability */
+    color: #555555; /* Subtle dark gray text */
+}
+
+/* Centered Image Section */
+.centered-image-section {
+    background-color: rgba(223, 182, 253, 0.6); /* Ivy Swipe background */
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically (if the section has height) */
+    padding: 40px 0; /* Add vertical padding around the image */
+}
+
+.centered-image-section img {
+    max-width: 90%; /* Ensures the image is responsive */
+    height: auto; /* Maintain the aspect ratio */
+    padding: 20px; /* Add inner spacing for better placement */
+    border-radius: 10px; /* Optional: Adds subtle corner rounding */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for depth */
+}
+
+/* Footer Section */
+.footer {
+    background-color: #4b00b2; /* Deep Purple */
+    color: #ffffff; /* White text */
+    padding: 20px 40px; /* Spacing inside the footer */
+    display: flex;
+    justify-content: space-between; /* Align text on the left, icons on the right */
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Full-width footer */
+    max-width: 1200px; /* Center content with a max width */
+    margin: 0 auto; /* Center align within the footer */
+}
+
+.footer-text p {
+    margin: 5px 0; /* Add spacing between lines of text */
+    font-size: 1rem; /* Text size */
+    line-height: 1.5; /* Improve readability */
+}
+
+.footer-icons a {
+    margin-left: 15px; /* Add spacing between icons */
+}
+
+.footer-icons img {
+    width: 30px; /* Adjust icon size */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Add hover effect */
+}
+
+.footer-icons img:hover {
+    transform: scale(1.1); /* Slightly enlarge icons on hover */
+}
+
+.hero-overlay h1 {
+    font-size: 3rem; /* Large, bold text */
+    font-weight: 700; /* Bold font weight */
+    text-transform: uppercase; /* Makes the text uppercase */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Adds depth with a shadow */
+}
+
+/* Purple Text Block Section */
+.purple-text-block {
+    position: relative;
+    margin-top: -50px; /* Moves the block slightly over the hero section */
+    z-index: 5; /* Ensures it appears above the hero image */
+    display: flex;
+    justify-content: center; /* Centers the text block horizontally */
+}
+
+.text-block {
+    background-color: #4b00b2; /* Deep Purple */
+    color: #ffffff; /* White text */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px 40px; /* Adds inner spacing for the text */
+    width: 70%; /* Adjust to control the width of the block */
+    max-width: 800px; /* Prevents the block from being too wide */
+    text-align: center; /* Centers the text inside the block */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+.text-block p {
+    font-size: 1rem; /* Adjust font size */
+    line-height: 1.6; /* Improves readability */
+    margin: 0; /* Removes default paragraph margin */
+}
+
+/* Symmetrical Sections */
+.symmetrical-section {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.section-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Spacing between text and image */
+    margin: 40px auto; /* Add space between sections */
+    max-width: 1200px; /* Center the content */
+    padding: 20px;
+    background-color: rgba(223, 182, 253, 0.6); /* Ivy Swipe background */
+    border-radius: 15px; /* Rounded corners for the section */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
+}
+
+.section-item:nth-of-type(2) {
+    flex-direction: row-reverse; /* Flip layout for the second section */
+}
+
+.text-side {
+    flex: 1; /* Ensures equal space for text and image */
+    padding: 40px;
+}
+
+.text-side h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #4b00b2; /* Deep Purple */
+}
+
+.text-side p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555555; /* Subtle dark gray */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4b00b2; /* Deep Purple */
+    color: #ffffff; /* White text */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    user-select: none; /* Prevent text selection */
+    cursor: default; /* Non-clickable */
+}
+
+.image-side {
+    flex: 1; /* Ensures equal space for text and image */
+    padding-right: 40px; /* Adds space on the left side of the image */
+}
+
+.image-side img {
+    width: 100%; /* Responsive scaling */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Rounded corners for images */
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    position: relative;
+    background: url("assets/gradientdarktop.png") no-repeat center center/cover; /* Replace with your image */
+    height: 400px; /* Adjust height as needed */
+    text-align: center; /* Centers text and form horizontally */
+    padding: 40px 20px; /* Add spacing inside the section */
+    color: #ffffff; /* White text */
+}
+
+.newsletter-section h1 {
+    font-size: 3rem; /* Title size */
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Add subtle shadow for readability */
+}
+
+.newsletter-section p {
+    font-size: 1rem; /* Smaller text */
+    line-height: 1.6; /* Improves readability */
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Shadow for better contrast */
+}
+
+/* Form Styling */
+.newsletter-form {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+    align-items: center; /* Center the form fields and button */
+    gap: 15px; /* Spacing between inputs and button */
+}
+
+.form-group input {
+    width: 100%; /* Full width */
+    max-width: 400px; /* Limit input width */
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff; /* White input field */
+    color: #4b00b2; /* Deep Purple text color */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align text inside the input */
+}
+
+.form-group input::placeholder {
+    color: #888888; /* Placeholder text color */
+}
+
+/* Button Styling */
+.newsletter-form .button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #4b00b2; /* Deep Purple */
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: default; /* Non-clickable */
+}
+
+/* Statistics Block */
+.stats-block {
+    background-color: #4b00b2; /* Deep Purple */
+    color: #ffffff; /* White text */
+    padding: 50px 20px; /* Spacing inside the section */
+    position: relative;
+    margin-top: -50px; /* Overlaps hero section */
+    z-index: 2; /* Ensure it's above the hero section */
+    border-radius: 15px; /* Optional: Rounded corners for the block */
+    max-width: 800px; /* Set the block width */
+    margin: -50px auto 50px auto; /* Center the block and position it */
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around; /* Space the elements evenly */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.stat-item {
+    text-align: center; /* Center align each stat */
+    margin: 20px; /* Add spacing around each item */
+    flex: 1 1 200px; /* Allow flexibility with a minimum width */
+}
+
+.stat-number {
+    font-size: 3rem; /* Large number size */
+    font-weight: 700; /* Bold */
+    color: #7df9ff; /* Electric Blue */
+    margin-bottom: 10px;
+}
+
+.stat-item p {
+    font-size: 1.2rem; /* Smaller text */
+    color: #ffffff; /* White text */
+    margin: 0;
+}
+
+/* Screen-Wide Image Section */
+.wide-image-section img {
+    width: 100%; /* Make the image span the full width of the screen */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Removes extra space below the image */
+    margin-top: -130px; /* Slight overlap with the statistics block */
+}
+
+/* Centered Text Section */
+.centered-text-section {
+    padding: 50px 20px; /* Spacing inside the section */
+    background-color: rgba(223, 182, 253, 0.6); /* Ivy Swipe background */
+    text-align: center; /* Center align all content */
+}
+
+.centered-text-section h2 {
+    font-size: 2.5rem; /* Title size */
+    margin-bottom: 20px; /* Space below the title */
+    color: #4b00b2; /* Deep Purple */
+}
+
+.centered-text-section p {
+    font-size: 1.2rem; /* Text size */
+    line-height: 1.6; /* Improve readability */
+    color: #555555; /* Subtle dark gray */
+    max-width: 800px; /* Limit the width for readability */
+    margin: 0 auto; /* Center the paragraph */
+}
+
+/* Image with Text and Button Section */
+.image-with-text-section {
+    display: flex;
+    justify-content: center; /* Center the image section */
+    padding: 50px 20px; /* Spacing around the section */
+    background-color: #f9f9f9; /* Optional: Light background for contrast */
+}
+
+.image-container {
+    position: relative;
+    width: 80%; /* Adjust to control the width of the image */
+    max-width: 900px; /* Limit the maximum width */
+    border-radius: 15px; /* Optional: Rounded corners for the image */
+    overflow: hidden; /* Ensure rounded corners apply to the image */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add depth */
+}
+
+.image-container img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Stack text and button */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for readability */
+    color: #ffffff; /* White text for contrast */
+    text-align: center; /* Center-align text */
+}
+
+.image-overlay p {
+    font-size: 1.2rem; /* Paragraph text size */
+    margin-bottom: 20px; /* Space below the text */
+    max-width: 600px; /* Limit text width for readability */
+}
+
+.image-overlay .button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #4b00b2; /* Deep Purple */
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add depth */
+    cursor: default; /* Non-clickable */
+    user-select: none; /* Prevent text selection */
+}
+
